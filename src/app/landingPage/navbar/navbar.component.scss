@@ -1,8 +1,19 @@
+@import './../../../styles.scss';
+@mixin borderStyling($bStyle) {
+    border: 2px $bStyle white;
+    border-radius: 10px;
+}
+
+@mixin dFlex($jc, $ai:center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
 nav {
     width: 100%;
     padding: 32px;
-    display: flex;
-    justify-content: space-between;
+    @include dFlex(space-between);
     >img {
         width: 64px;
         height: 64px;
@@ -21,10 +32,9 @@ nav {
     .phone_btn {
         display: flex;
         align-items: center;
-        border: 2px solid white;
-        border-radius: 10px;
+        @include borderStyling(solid);
         padding: 6px;
-        background-color: darkred;
+        background-color: $dark_red;
         &:hover {
             background-color: red;
         }
