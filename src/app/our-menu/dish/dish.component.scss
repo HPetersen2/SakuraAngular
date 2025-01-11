@@ -1,0 +1,41 @@
+.dish-container {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin: 0 160px 0 160px;
+    >div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 80px;
+        >img {
+            width: 352px;
+            height: 352px;
+        }
+        >table {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            >th {
+                font-family: 'Economica';
+                font-weight: bold;
+                font-size: 56px;
+                margin-bottom: 16px;
+            }
+            > tr {
+                display: flex;
+                justify-content: space-between;
+                > td {
+                    font-family: 'Raleway';
+                    font-weight: bold;
+                    font-size: 32px;
+                    color: #675E54;
+                }
+            }
+        }
+    }
+    .spicy-miso-ramen {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

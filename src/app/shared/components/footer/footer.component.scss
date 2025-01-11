@@ -1,0 +1,19 @@
+section {
+    background-color: #0A141E;
+    padding: 64px 160px 64px 160px;
+    >footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Economica';
+        }
+        .sakura-logo >img {
+            height: 44px;
+        }
+    }
+
+}
+
